@@ -5,6 +5,11 @@ Eric Liao
 Software Engineer, Edlio & Lecturer, CSULA
 @rcliaodev
 
+* Agenda
+- About me
+- My journey of using Go
+- Three lessons
+
 * About me
 - Work at Edlio for 4 years
 - Teaching at CSULA for 2 years
@@ -14,6 +19,11 @@ Software Engineer, Edlio & Lecturer, CSULA
 - Artificial Intelligence
 - Introduction to database
 - Web Development
+
+* Motivations
+- Grading is tedious
+- Learning GoLang
+- Follow DDD (Domain Driven Design)
 
 * Interfaces are implemented implicitly
 .code interface.go
@@ -36,11 +46,34 @@ Software Engineer, Edlio & Lecturer, CSULA
 * DB Unit Test
 .iframe http://104.131.155.18:8000/
 
+* Top level business logic with interface
 
-* Top level business logic with *interface*
+* Project Structure
+    domain.go
+    cmd/main.go
+    dao/db.go
+    dao/memory.go
+    web/handlers.go
+
+.link https://github.com/golang-standards/project-layout Reference: https://github.com/golang-standards/project-layout
+
+* Example Code
+
 .code db-unit-test.go
 
 * Swapping implementation behind *interface*
+
+* Use cases
+- Require same "unit test" flow for both MySQL and MongoDB
+- Test cases needs to be similar report format
+
+* Example Code
 .code db-swap.go
+
+* Bonus notes
+- This presentation is by https://godoc.org/golang.org/x/tools/present
+- Usage: `./present` on the folder with `*.slide`
+
+.link https://godoc.org/golang.org/x/tools/present
 
 .html style.html
