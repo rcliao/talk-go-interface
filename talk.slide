@@ -1,0 +1,46 @@
+Using "interface" keyword for fun and for profit!
+Journey of using GoLang interface
+
+Eric Liao
+Software Engineer, Edlio & Lecturer, CSULA
+@rcliaodev
+
+* About me
+- Work at Edlio for 4 years
+- Teaching at CSULA for 2 years
+- Previous as TA in CSULA for a year
+
+* Classes
+- Artificial Intelligence
+- Introduction to database
+- Web Development
+
+* Interfaces are implemented implicitly
+.code interface.go
+
+* Three tier architecture
+.image architecture.png
+
+* DAO Pattern
+.code dao.go
+
+* DAO Implementation
+.code memory.go
+
+* DAO DB Implementation
+.code db.go
+
+* Testing with *interface*
+.code dao_test.go
+
+* DB Unit Test
+.iframe http://104.131.155.18:8000/
+
+
+* Top level business logic with *interface*
+.code db-unit-test.go
+
+* Swapping implementation behind *interface*
+.code db-swap.go
+
+.html style.html
